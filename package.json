@@ -1,6 +1,6 @@
 {
 	"name": "ascii-banner",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"description": "Create ASCIIMO Easy Banners!",
 	"main": "src/banner.js",
 	"scripts": {

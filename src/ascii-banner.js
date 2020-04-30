@@ -1,10 +1,10 @@
 
 
-var sys = require('sys'),
-	colors = require('colors'),
-	asciimo = require('asciimo').Figlet,
-	extend = require('extend')
-;
+
+const colors = require('colors');
+const asciimo = require('asciimo').Figlet;
+const extend = require('extend');
+
 
 
 var Placeholder = require('./placeholder'),
@@ -117,9 +117,9 @@ module.exports.out = function(callback) {
 		_before.forEach(addLine);
 		
 		if (_color) {
-			sys.puts(art[_color]);
+			console.log(art[_color]);
 		} else {
-			sys.puts(art);
+			console.log(art);
 		}
 		
 		_after.forEach(addLine);
@@ -144,9 +144,9 @@ function addLine(line) {
 	line.text = StrAlign.apply(line.text, _width, line.align);
 
 	if (line.color) {
-		sys.puts(line.text[line.color]);
+		console.log(line.text[line.color]);
 	} else {
-		sys.puts(line.text);
+		console.log(line.text);
 	}
 }
 
